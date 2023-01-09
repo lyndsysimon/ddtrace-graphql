@@ -3,7 +3,7 @@ import os
 
 import ddtrace
 import graphql
-from ddtrace.ext import errors as ddtrace_errors
+import ddtrace.constants as ddtrace_errors
 
 from ddtrace_graphql import utils
 

@@ -29,6 +29,10 @@ setup(
     ],
     keywords="tracing datadog graphql graphene",
     packages=find_packages(exclude=["tests"]),  # Required
-    install_requires=["ddtrace", "graphql-core", "wrapt"],
+    install_requires=[
+        "ddtrace>=1.5.3",
+        "graphql-core~=2.3.2",
+        "wrapt",
+    ],
     extras_require={"test": ["tox", "pytest", "pytest-cov"]},
 )
